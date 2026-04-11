@@ -4,125 +4,121 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rajdhani Tiffin & Catering</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
-    body { background:#f9f9f9; }
-    header { background:#ff6b00; color:white; padding:20px; text-align:center; }
-    nav { display:flex; justify-content:center; gap:20px; background:#222; padding:12px; }
-    nav a { color:white; text-decoration:none; font-size:14px; }
-    section { padding:30px 20px; }
-    h2 { text-align:center; margin-bottom:20px; }
+::-webkit-scrollbar{
+display:none;
+}
+</style>
 
-    .btn {
-      display:inline-block;
-      background:#25D366;
-      color:white;
-      padding:12px 18px;
-      border-radius:6px;
-      text-decoration:none;
-      margin-top:10px;
-    }
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    .services, .menu, .gallery {
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-      gap:20px;
-    }
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    .card {
-      background:white;
-      padding:15px;
-      border-radius:10px;
-      box-shadow:0 2px 8px rgba(0,0,0,0.1);
-      text-align:center;
-    }
-
-    .gallery img {
-      width:100%;
-      border-radius:10px;
-      height:300px;
-      object-fit:cover;
-    }
-
-    iframe {
-      width:100%;
-      height:300px;
-      border:0;
-      border-radius:10px;
-    }
-
-    footer {
-      background:#222;
-      color:white;
-      text-align:center;
-      padding:15px;
-    }
-  </style>
 </head>
-<body>
 
-<header>
-  <h1>Rajdhani Tiffin & Catering</h1>
-  <p>Ghar ka swad, har din!</p>
-  <a class="btn" href="https://wa.me/919973972268">Order on WhatsApp</a>
+<body class="bg-gray-100 font-[Poppins]">
+
+<!-- Header -->
+<header class="bg-orange-500 text-white text-center p-6">
+  <h1 class="text-3xl font-semibold">Rajdhani Tiffin & Catering</h1>
+  <p class="mt-2">Ghar ka swad, har din!</p>
+
+  <a href="https://wa.me/919973972268"
+     class="inline-block mt-4 bg-green-500 px-5 py-2 rounded-md hover:bg-green-600 transition">
+     Order on WhatsApp
+  </a>
 </header>
 
-<nav>
-  <a href="#">Home</a>
-  <a href="#services">Services</a>
-  <a href="#menu">Menu</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#contact">Contact</a>
+<!-- Navbar -->
+<nav class="flex justify-center gap-6 bg-gray-900 text-white py-3 sticky top-0">
+  <a href="#" class="hover:text-orange-400">Home</a>
+  <a href="#services" class="hover:text-orange-400">Services</a>
+  <a href="#menu" class="hover:text-orange-400">Menu</a>
+  <a href="#gallery" class="hover:text-orange-400">Gallery</a>
+  <a href="#contact" class="hover:text-orange-400">Contact</a>
 </nav>
 
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="card">
-      <h3>1 Time Tiffin</h3>
-      <p>₹80 / meal</p>
+<!-- Services -->
+<section id="services" class="py-10 px-5">
+  <h2 class="text-2xl font-semibold text-center mb-8">Our Services</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="bg-white p-5 rounded-xl shadow text-center">
+      <h3 class="text-lg font-semibold">1 Time Tiffin</h3>
+      <p class="text-gray-600">₹80 / meal</p>
     </div>
-    <div class="card">
-      <h3>2 Time Tiffin</h3>
-      <p>₹150 / day</p>
+
+    <div class="bg-white p-5 rounded-xl shadow text-center">
+      <h3 class="text-lg font-semibold">2 Time Tiffin</h3>
+      <p class="text-gray-600">₹150 / day</p>
     </div>
-    <div class="card">
-      <h3>3 Time Tiffin</h3>
-      <p>₹220 / day</p>
+
+    <div class="bg-white p-5 rounded-xl shadow text-center">
+      <h3 class="text-lg font-semibold">3 Time Tiffin</h3>
+      <p class="text-gray-600">₹220 / day</p>
     </div>
+
   </div>
 </section>
 
-<section id="menu">
-  <h2>Menu</h2>
-  <div class="menu">
-    <div class="card">Roti, Sabzi, Dal, Rice</div>
-    <div class="card">Paneer Special (Sunday)</div>
-    <div class="card">Seasonal Veg Meals</div>
-    <div class="card">Breakfast (Poha/Paratha)</div>
+<!-- Menu -->
+<section id="menu" class="py-10 px-5">
+  <h2 class="text-2xl font-semibold text-center mb-8">Menu</h2>
+
+  <div class="grid md:grid-cols-4 gap-6">
+
+    <div class="bg-white p-5 rounded-xl shadow text-center">Roti, Sabzi, Dal, Rice</div>
+
+    <div class="bg-white p-5 rounded-xl shadow text-center">Paneer Special (Sunday)</div>
+
+    <div class="bg-white p-5 rounded-xl shadow text-center">Seasonal Veg Meals</div>
+
+    <div class="bg-white p-5 rounded-xl shadow text-center">Breakfast (Poha/Paratha)</div>
+
   </div>
 </section>
 
-<section id="gallery">
-  <h2>Food Gallery</h2>
-  <div class="gallery">
-    <img src="https://t4.ftcdn.net/jpg/01/15/48/41/360_F_115484118_OFxvDHelhwIRAkNhXIfCZS6Py0eUyWJD.jpg" alt="">
-    <img src="https://t4.ftcdn.net/jpg/08/06/21/93/360_F_806219362_LiOsUcCtWAA9nlb4PyiA83bHFSHG1wGJ.jpg" alt="tiffin">
-    <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/butter_paneer_curry_98394_16x9.jpg" alt="food">
-    <img src="https://imgs.search.brave.com/keeaq0cFUa1wmeXp25MUO_q3nzmrtHSdyN2awSR_PRE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA4LzAwLzIzLzA1/LzM2MF9GXzgwMDIz/MDUwNV9CcHY5ODNx/UTB5OHlPazhld0pl/Ym1VbFhEV2hRYUtS/Yy5qcGc" alt="food">
+<!-- Gallery -->
+
+ <section id="gallery" class="py-10 px-5">
+  <h2 class="text-2xl font-semibold text-center mb-8">Food Gallery</h2>
+
+  <div class="flex gap-6 overflow-x-auto scroll-smooth pb-4">
+
+    <img class="min-w-[300px] h-[300px] object-cover rounded-xl"
+    src="https://t4.ftcdn.net/jpg/01/15/48/41/360_F_115484118_OFxvDHelhwIRAkNhXIfCZS6Py0eUyWJD.jpg">
+
+    <img class="min-w-[300px] h-[300px] object-cover rounded-xl"
+    src="https://t4.ftcdn.net/jpg/08/06/21/93/360_F_806219362_LiOsUcCtWAA9nlb4PyiA83bHFSHG1wGJ.jpg">
+
+    <img class="min-w-[300px] h-[300px] object-cover rounded-xl"
+    src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/butter_paneer_curry_98394_16x9.jpg">
+
+    <img class="min-w-[300px] h-[300px] object-cover rounded-xl"
+    src="https://imgs.search.brave.com/keeaq0cFUa1wmeXp25MUO_q3nzmrtHSdyN2awSR_PRE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA4LzAwLzIzLzA1/LzM2MF9GXzgwMDIz/MDUwNV9CcHY5ODNx/UTB5OHlPazhld0pl/Ym1VbFhEV2hRYUtS/Yy5qcGc">
+
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact & Location</h2>
-  <p style="text-align:center;">Call: 9973972268</p>
-  <div style="margin-top:20px;">
-    <iframe src="https://maps.google.com/maps?q=Patna&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+<!-- Contact -->
+<section id="contact" class="py-10 px-5">
+  <h2 class="text-2xl font-semibold text-center mb-6">Contact & Location</h2>
+
+  <p class="text-center text-gray-700">📞 Call: 9973972268</p>
+
+  <div class="mt-6">
+    <iframe class="w-full h-[300px] rounded-xl"
+    src="https://maps.google.com/maps?q=Patna&t=&z=13&ie=UTF8&iwloc=&output=embed">
+    </iframe>
   </div>
 </section>
 
-<footer>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center p-4">
   <p>© 2026 Rajdhani Tiffin & Catering</p>
 </footer>
 
